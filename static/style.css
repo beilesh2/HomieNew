@@ -1,0 +1,67 @@
+/* Base styling for the body to add some padding, set the font, and include the background image */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    /*background-image: url('/static/images/bg.jpg'); /* Path to your background image */
+    /*background-size: cover; /* Cover the entire body */
+    /*background-position: center; /* Center the background image */
+    /*background-attachment: fixed; /* Fixed background */
+    color: #333; /* Setting text color for better readability */
+    background-color: #f8f8f8;
+}
+
+/* Styling for the chat container to center it and allow dynamic expansion */
+#chat-container {
+    width: 40%;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Align children from top to bottom */
+    overflow: hidden;
+}
+
+/* Styling for the chat box to handle overflow of messages */
+#chat-box {
+    padding: 10px;
+    overflow-y: auto;
+    height: 400px; /* Initial height, can be adjusted */
+}
+
+/* Styling for the input container to layout the input field and button */
+#input-container {
+    display: flex;
+    align-items: center; /* Aligns the button and input vertically */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners for the container */
+    padding: 8px;
+}
+
+/* Styling for the input field */
+#user-input {
+    flex-grow: 1;
+    border: none; /* Removes the border as it's inside the container with a border */
+    padding: 8px;
+    margin: 0 8px; /* Adds space on both sides */
+}
+
+/* Styling for the send button, mimicking ChatGPT */
+#send-btn, #file-input {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 8px; /* For RTL, this will be the space on the visual left of the button */
+}
+
+/* Hover effect for button */
+#send-btn, #file-input :hover {
+    background-color: #0056b3;
+}
